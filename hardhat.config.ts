@@ -96,6 +96,31 @@ const config: HardhatUserConfig = {
         count: 20,
       },
     },
+    buildbear: {
+      url: "https://backend.buildbear.io/node/vigorous-hawking-7342ed",
+      accounts: [
+        {
+          privateKey: '53888ce3e48b676b38130a82374e6fa8c2443a4eb60a516ba5069f6e6a73f916',
+          balance: '100000000000000000000000000000',
+        },
+        {
+          privateKey: '18e4cb4376e1d0550c2d72ddec815fc0b3a25d7a3549e288c0af35749b17c993',
+          balance: '100000000000000000000000000000',
+        },
+        {
+          privateKey: '66e91a78e36f034791d1472ebdb327e69798c65380f845def39a4f37750d4303',
+          balance: '100000000000000000000000000000',
+        },
+        {
+          privateKey: 'af5a43b70582453f75ec3e2d622992080db2ad09dcbf5f08425e7f72bdaa3fae',
+          balance: '100000000000000000000000000000',
+        },
+        {
+          privateKey: '5e0f127481db3c4940182b975b1be158a0c30475f3f13018a02962dfba8045e7',
+          balance: '100000000000000000000000000000',
+        },
+      ].map(({ privateKey }: { privateKey: string }) => privateKey),
+    },
   },
   gasReporter: {
     enabled: TRACK_GAS,

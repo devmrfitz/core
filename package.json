@@ -9,6 +9,7 @@
     "spdx": "hardhat prepend-spdx-license",
     "size": "npm run compile && hardhat size-contracts",
     "full-deploy-local": "hardhat full-deploy --network localhost",
+    "full-deploy-buildbear": "hardhat full-deploy --network buildbear",
     "full-deploy-mumbai": "hardhat full-deploy --network mumbai",
     "coverage": "npm run compile && hardhat coverage --temp temp-artifacts --testfiles test/emptyrun.coverage.ts && hardhat coverage --temp temp-artifacts --testfiles '!test/emptyrun.coverage.ts'",
     "run-env": "npm i && tail -f /dev/null",
@@ -40,7 +41,7 @@
     "@typechain/hardhat": "3.0.0",
     "@types/chai": "4.2.22",
     "@types/mocha": "9.0.0",
-    "@types/node": "16.11.11",
+    "@types/node": "^16.11.11",
     "@typescript-eslint/eslint-plugin": "5.5.0",
     "@typescript-eslint/parser": "5.5.0",
     "chai": "4.3.4",
@@ -71,7 +72,8 @@
     }
   },
   "dependencies": {
-    "@openzeppelin/contracts": "4.5.0"
+    "@openzeppelin/contracts": "4.5.0",
+    "@remix-project/remixd": "^0.6.8"
   },
   "author": "Lens",
   "contributors": [
