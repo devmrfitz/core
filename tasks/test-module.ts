@@ -18,7 +18,7 @@ import {
 
 // eslint-disable-next-line no-empty-pattern
 task('test-module', 'tests the SecretCodeFollowModule').setAction(async ({}, hre) => {
-  const CURRENCY_ADDR = '0x50F8462EB065967957a6C991308A130092836B7a';
+  const CURRENCY_ADDR = '0x2dD9ce3fc29cb2d5218f003B2B4EedE996DD895F';
   const [governance, , user] = await initEnv(hre);
   console.log('governance', governance.address);
   console.log('user', user.address);
